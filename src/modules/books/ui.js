@@ -1,4 +1,5 @@
 import { Books } from './book.js';
+import { Store } from './store';
 
 class UI {
     static displayBooks() {
