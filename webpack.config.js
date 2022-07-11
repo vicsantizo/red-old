@@ -4,14 +4,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: {
-        bundle: path.resolve(__dirname, './src/index.js')
+        bundle: path.resolve(__dirname, 'src/index.js')
     },
     output: {
-        filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[contenthash].js', 
         clean: true,
-        assetModuleFilename: '[name][ext]',
+        assetModuleFilename: 'images/[name][ext]',
     },
     devtool: 'source-map',
     devServer: {
@@ -58,7 +57,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'vicsantizo - portfolio',
             filename: 'index.html',
-            template: 'src/template.html',
-        })
+            template: path.resolve(__dirname, 'src/template.html'),
+        }),
     ]
 };
