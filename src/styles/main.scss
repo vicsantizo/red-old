@@ -1,4 +1,41 @@
 @import "_variables";
 @import "/node_modules/bootstrap/scss/bootstrap";
 
+.book {
+    background-color: #EB5C68;
+}
 
+.book-cover {
+    height: 175px;
+    width: 160px;
+}
+
+.book-title {
+    writing-mode: vertical-rl;
+}
+
+.book-progress {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.invert-color {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.filter-icon {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
