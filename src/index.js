@@ -5,4 +5,5 @@ import '@fortawesome/fontawesome-free/js/regular';
 import '@fortawesome/fontawesome-free/js/brands';
 
 import redLogo from './assets/images/red-logo.svg';
+import filterIcon from './assets/images/filter-icon.svg';
 
